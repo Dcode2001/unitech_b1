@@ -21,8 +21,8 @@ class _insertpageState extends State<insertpage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text("Insert Page")),
+    return WillPopScope(child: Scaffold(
+      appBar: AppBar(title: Text("Insert Page"),centerTitle: true,),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(5.0),
@@ -223,7 +223,13 @@ class _insertpageState extends State<insertpage> {
           ),
         ),
       ),
-    );
+    ), onWillPop: goback);
+  }
+
+  Future<bool> goback()
+  {
+      Navigator.pop(context);
+      return Future.value();
   }
 }
 
