@@ -53,9 +53,7 @@ class _viewpageState extends State<viewpage> {
 
           return Card(
             child: ListTile(
-              onLongPress: () {
 
-              },
               onTap: () {
 
               },

@@ -6,6 +6,7 @@ import 'package:unitech_b1/viewpage.dart';
 class insertpage extends StatefulWidget {
   const insertpage({Key? key}) : super(key: key);
 
+
   @override
   State<insertpage> createState() => _insertpageState();
 }
